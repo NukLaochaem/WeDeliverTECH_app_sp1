@@ -1,0 +1,83 @@
+:root {
+  --blue: #0E8EA8;
+  --lightBlue: #83D1E1;
+  --white: #FFF;
+  --black: #212529;
+  --green: #198754;
+  --red: #dc3545;
+}
+
+@font-face {
+  font-family: "Consolas";
+  src: url(font/Consolas.ttf);
+}
+
+@font-face {
+  font-family: "Calibri";
+  src: url(font/Calibri.ttf);
+}
+* {
+  box-sizing: border-box;
+  font-family: "Calibri";
+  color: var(--black);
+}
+/*                                           Nav fonts and Color reset              */
+.navbar a{
+  font-family: "Consolas";
+}
+.navbar-menu{
+  background-color: var(--blue);
+  color: var(--white) !important;
+  width: 250px;
+  margin: 0 1px;
+}
+.dropdown-menu{
+  width: 250px !important;
+}
+.dropdown-item{
+  background-color: var(--lightBlue) !important;
+  color: var(--black) !important;
+}
+
+/*                                              NavBar dropdown                 */
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown>.dropdown-toggle:active {
+  pointer-events: none;
+}
+
+/*                                                  Table               */
+table{
+  border: var(--black) !important;
+}
+
+thead{
+  background-color: var(--blue );
+  
+}
+thead tr th{
+  font-family: "Consolas" ;
+  color: var(--white) ;
+}
+tbody{
+  background-color: var(--lightBlue);
+}
+.selected{
+  background-color: var(--blue);
+}
+.empOutTime{
+  text-align: center;
+}
+
+/*                                                  Button             */
+.posBtn {
+  font-family: "Consolas";
+  background-color: var(--green) ;
+  color: var(--white);
+}
+.negBtn{
+  font-family: "Consolas";
+  background-color: var(--red);
+  color: var(--white);
+}
