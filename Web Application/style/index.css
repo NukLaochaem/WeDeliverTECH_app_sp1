@@ -5,6 +5,7 @@
   --black: #212529;
   --green: #198754;
   --red: #dc3545;
+
 }
 
 @font-face {
@@ -50,6 +51,8 @@
 /*                                                  Table               */
 table{
   border: var(--black) !important;
+  border-radius: 6px;
+  overflow: hidden; /* needed this for rounded corner to display.. */
 }
 
 thead{
@@ -63,21 +66,36 @@ thead tr th{
 tbody{
   background-color: var(--lightBlue);
 }
-.selected{
+.selected, .driverSelected{
   background-color: var(--blue);
 }
+
 .empOutTime{
   text-align: center;
 }
+input{
+  max-width: 150px;
+}
 
 /*                                                  Button             */
-.posBtn {
+.greenBtn {
   font-family: "Consolas";
   background-color: var(--green) ;
   color: var(--white);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-.negBtn{
+.greenBtn:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
+
+.redBtn{
   font-family: "Consolas";
   background-color: var(--red);
   color: var(--white);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.redBtn:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
 }

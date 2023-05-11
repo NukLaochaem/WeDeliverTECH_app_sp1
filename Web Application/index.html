@@ -52,7 +52,6 @@
     </div>
   </nav>
 
-
   <!--border border-dark border-2 mt-4-->
   <div class="container">
     <div class="container d-flex">
@@ -79,8 +78,8 @@
       </tbody>
     </table>
     <div class="d-flex justify-content-between">
-      <button id="out" class="p-1 px-2 negBtn">Out</button>
-      <button id="in" class="px-3 posBtn">In</button>
+      <button id="out" class="p-1 px-2 redBtn">Out</button>
+      <button id="in" class="px-3 greenBtn">In</button>
     </div>
 
     <!--input table with driver info-->
@@ -113,16 +112,16 @@
             </div>
             <input type="hidden" id="selectedVehicle" value="">
           </td>
-          <td><input type="text" id="nameInput" required></td>
-          <td><input type="text" id="surnameInput" required></td>
-          <td><input type="text" id="telephoneInput" required></td>
-          <td><input type="text" id="addressInput" required></td>
-          <td><input type="text" id="returnTimeInput" required></td>
+          <td><input type="text" id="nameInput" placeholder="Name"></td>
+          <td><input type="text" id="surnameInput" placeholder="Surname"></td>
+          <td><input type="text" id="telephoneInput" placeholder="Telephone"></td>
+          <td><input type="text" id="addressInput" placeholder="Address"></td>
+          <td><input type="text" id="returnTimeInput" maxlength="4" placeholder="hh:mm"></td>
         </tr>
       </tbody>
     </table>
     <div class="d-flex justify-content-end">
-      <button class="posBtn" onclick="saveInput()">Add</button>
+      <button class="greenBtn" onclick="addDelivery()">Add</button>
     </div>
 
     <!--display driver info from javascript-->
@@ -142,10 +141,14 @@
       </tbody>
     </table>
     <div class="d-flex justify-content-end">
-      <button class="negBtn" onclick="clearDeliveries()">Clear</button>
+      <button class="redBtn" onclick="clearDeliveries()">Clear</button>
     </div>
 
-    <div id="liveToastBtn"></div>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+
+    </div>
+
 
     <div class=" d-flex justify-content-end me-4 mt-4">
       <h4 id="currentTime">Current Time</h4>
