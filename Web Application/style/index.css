@@ -52,7 +52,7 @@
 table{
   border: var(--black) !important;
   border-radius: 6px;
-  overflow: hidden; /* needed this for rounded corner to display.. */
+  overflow: hidden; 
 }
 
 thead{
