@@ -14,3 +14,11 @@ Staff board is use to keep track of staff members whos in office. The Receptioni
 
 
 ## Delivery Board
+
+Delivery board is to keep track of the current deliveries. To make a delivery the receptinoist have to fill out the schedule delivery with driver name, address and return time. 
+
+- Selected vehicle type, fill out the from and click **add** and the delivery order will be added to the delivery board
+
+- If driver is running late from delivery a toast notification will pop up with driver and delivery details.
+
+- When driver return before the return time, receptinost can clear the delivery which me delivery is complated
