@@ -1,6 +1,6 @@
 # WeDeliverTECH
 
-##Staff Board
+## Staff Board
 
 The Staff Board is used to keep track of staff members who are in the office. The Receptionist's job is to clock the members in and out when they are going in and out of the office for meetings, lunch, etc.
 
@@ -11,7 +11,7 @@ The Staff Board is used to keep track of staff members who are in the office. Th
 - If a staff member returns before the expected return time, the Receptionist can select the staff member and clock them back in. The status will change to **In**, and the time will be reset.
 
 
-#Delivery Board
+## Delivery Board
 
 The Delivery Board is used to keep track of current deliveries. To make a delivery, the Receptionist needs to fill out the Scheduled Delivery form with the driver's name, the delivery address, and the expected return time.
 
