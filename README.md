@@ -22,6 +22,6 @@ The Delivery Board is used to keep track of current deliveries. To make a delive
 - When a driver returns before the expected return time, the Receptionist can clear the delivery, indicating that the delivery is complete.
 
 
-### WeDeliverTECH is a web application built with JavaScript, HTML, and CSS. It uses Bootstrap for the UI and jQuery for the JavaScript functionality.
+#### WeDeliverTECH is a web application built with JavaScript, HTML, and CSS. It uses Bootstrap for the UI and jQuery for the JavaScript functionality.
 
-### To run the application locally, simply clone the repository and open the index.html file in your browser.
+#### To run the application locally, simply clone the repository and open the index.html file in your browser.
