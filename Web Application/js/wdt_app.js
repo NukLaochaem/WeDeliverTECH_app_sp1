@@ -3,7 +3,6 @@ class Employee {
     this.name = name;
     this.surname = surname;
   }
-
   fullName() {
     return `${this.name} ${this.surname}`;
   }
@@ -134,7 +133,7 @@ $(document).ready(function () {
         )}`;
         $("#employeeTableBody tr.selected .returnTime").text(returnTime);
 
-        //Late staff
+        //Late staff function
         let staffName = selectedRow.find("td:nth-child(2)").html();
         let staffSurname = selectedRow.find("td:nth-child(3)").html();
         let staffPicture = selectedRow.find("img").attr("src");
@@ -165,7 +164,7 @@ $(document).ready(function () {
         }, 1000);
       });
 
-      // In button  clear Out Time, duration and expected Return Time cells,
+      // IN clear out time, duration and expected return time cells,
       $("#in").on("click", function staffIn(e) {
         if (!selectedRow) {
           alert("Please select a staff member first.");
@@ -263,7 +262,7 @@ function addDelivery() {
   document.querySelector("#returnTimeInput").value = "";
 }
 
-// Input check
+// Input validated check
 function validateDelivery(vehicle, name, surname, telephone, returnTime) {
   if (vehicle !== "car" && vehicle !== "bike") {
     alert("Please select a vehicle");
