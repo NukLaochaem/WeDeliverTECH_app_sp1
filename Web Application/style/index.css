@@ -52,12 +52,10 @@
 table{
   border: var(--black) !important;
   border-radius: 6px;
-  overflow: hidden; 
 }
 
 thead{
   background-color: var(--blue );
-  
 }
 thead tr th{
   font-family: "Consolas" ;
